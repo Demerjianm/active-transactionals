@@ -40,6 +40,12 @@ class UpdateForm extends Component {
           }}
         >
           <input id='title' value={title} onChange={this.handleChange}/>
+          <input id='lender' value={lender} onChange={this.handleChange} placeholder="Lender" />
+          <input id='em' value={em} onChange={this.handleChange} type='date' placeholder="EM" />
+          <input id='sd' value={sd} onChange={this.handleChange} placeholder="SD" />
+          <input id='dd' value={dd} onChange={this.handleChange} placeholder="DD" />
+          <input id='fa' value={fa} onChange={this.handleChange} placeholder="FA" />
+          <input id='sm' value={sm} onChange={this.handleChange} placeholder="SM" />
           <textarea id='body' value={body} onChange={this.handleChange}></textarea>
           <button className="btn">Update</button>
         </form>

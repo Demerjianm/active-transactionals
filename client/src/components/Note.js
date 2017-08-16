@@ -30,7 +30,7 @@ class Note extends React.Component {
   }
 
   render() {
-    let { note: { title, body, updatedAt, createdAt }} = this.props;
+    let { note: { title, body, lender, em, sd, dd, fa, sm, updatedAt, createdAt }} = this.props;
 
     return (
       <div>
