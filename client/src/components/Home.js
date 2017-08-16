@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-  <h4>Home</h4>
+  <h4>Transactional Book</h4>
 )
 
 export default Home;

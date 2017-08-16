@@ -8,7 +8,7 @@ const NoteForm = ({ dispatch }) => {
 
   return (
     <div>
-      <h5 className="center">Add A Note</h5>
+      <h5 className="center">Add A Transaction</h5>
       <form
         ref={ n => form = n }
         onSubmit={ e => {
@@ -29,12 +29,12 @@ const NoteForm = ({ dispatch }) => {
       >
         <input ref={ n => title = n } placeholder="Title" />
         <input ref={ n => lender = n } placeholder="Lender" />
-        <input ref={ n => em = n } placeholder="EM" />
-        <input ref={ n => sd = n } placeholder="SD" />
-        <input ref={ n => dd = n } placeholder="DD" />
-        <input ref={ n => fa = n } placeholder="FA" />
-        <input ref={ n => sm = n } placeholder="SM" />
-        <textarea ref={ n => body = n } placeholder="Note Body"></textarea>
+        <input ref={ n => em = n } type='date' placeholder="EM" />
+        <input ref={ n => sd = n } type='date' placeholder="SD" />
+        <input ref={ n => dd = n } type='date' placeholder="DD" />
+        <input ref={ n => fa = n } type='date' placeholder="FA" />
+        <input ref={ n => sm = n } type='date' placeholder="SM" />
+        <textarea ref={ n => body = n } placeholder="Extra Notes"></textarea>
 
         <button className="btn">Save</button>
       </form>

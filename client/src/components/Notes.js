@@ -30,7 +30,9 @@ class Notes extends Component {
   render() {
     return(
       <div className='container'>
-        <h4>My Notebook</h4>
+       <div class="col s7 push-s5">
+        <h4>Transactions</h4>
+        </div>
         <hr />
         <div className='row'>
           <div className='col s12 m6'>
